@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday, My Love 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      color: #fff;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    .card {
+      max-width: 650px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 25px;
+      padding: 35px 25px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    }
+
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      margin: 15px 0;
+    }
+
+    .heart {
+      font-size: 3em;
+      animation: beat 1.5s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 30px;
+      background: #fff;
+      color: #ff5e8e;
+      font-size: 1em;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #ffe6ef;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    iframe {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="heart">💖</div>
+
+    <h1>Happy Birthday, My Love 🎂</h1>
+
+    <p>
+      Today is special, because today is the day you were born—
+      the day the world unknowingly gained someone who would later
+      become my favorite person.
+    </p>
+
+    <p>
+      I wish I could be there with you right now, holding your hand,
+      looking at you while you smile, and celebrating this day the way
+      you truly deserve.
+    </p>
+
+    <p>
+      Distance may keep us apart, but never for a second did it make
+      my love for you any smaller. If anything, it reminds me every day
+      how sure I am of you.
+    </p>
+
+    <p>
+      Palagi kitang pipiliin.  
+      Sa lahat ng araw, sa lahat ng pagkakataon.
+    </p>
+
+    <button onclick="playMusic()">▶ Play music for you</button>
+
+    <p><strong>I love you. Always. 💕</strong></p>
+
+    <div class="footer">
+      — From someone who loves you endlessly
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <iframe id="music"
+    src="https://www.youtube.com/embed/5yZCz6vN0sE?enablejsapi=1&loop=1&playlist=5yZCz6vN0sE"
+    allow="autoplay">
+  </iframe>
+
+  <script>
+    function playMusic() {
+      const iframe = document.getElementById("music");
+      iframe.src += "&autoplay=1";
+    }
+  </script>
+
+</body>
+</html>
+
